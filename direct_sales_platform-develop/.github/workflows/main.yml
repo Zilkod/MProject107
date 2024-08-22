@@ -1,0 +1,16 @@
+name: Mirror Repo
+
+on: push
+
+jobs:
+  to_Gittea:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: ./.github/lib/sync
+        with:
+          target_repo_url: ${{ secrets.GITEA_REPO_URL }}
+          ssh_private_key: ${{ secrets.GITEA_SSH_PRIVATE_KEY }}
+          ssh_port: ${{ secrets.GITEA_SERVER_SSH_PORT }}

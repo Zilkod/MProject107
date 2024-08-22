@@ -1,0 +1,124 @@
+.view.cart > .cart.btn-group-part {
+  @apply flex flex-row xl:mx-1 justify-between mt-2;
+}
+
+.view.cart > .cart.blank-part {
+  @apply flex flex-row xl:mx-1 mt-2 justify-center items-center bg-custom-white py-14 text-3xl font-bold;
+
+  border-radius: 8px;
+}
+
+.view.cart > .cart.main-part {
+  @apply flex flex-col xl:mx-1 mt-2;
+}
+
+.view.cart > .cart.action-part {
+  @apply flex flex-col xl:mx-1 mt-2;
+}
+
+.view.cart > .cart.action-part > .result-section {
+  @apply bg-custom-white flex flex-col items-end;
+
+  border-radius: 8px;
+}
+
+.number-total, .number-discount {
+  @apply py-6 px-2 flex flex-row items-center;
+}
+
+.result-section > .action-dispatch {
+  @apply self-stretch flex flex-col xl:flex-row justify-between items-center
+}
+
+.number-total > .total-sign {
+  @apply py-1 px-3 font-semibold mr-12 text-sm bg-custom-black text-custom-white;
+
+  border-radius: 8px;
+}
+
+.number-total > .total-text, .number-discount > .discount-text {
+  @apply text-2xl mr-4 font-bold text-custom-black
+}
+
+.number-discount > .discount-sign {
+  @apply py-1 px-3 font-semibold mr-12 text-sm bg-custom-light text-custom-black;
+
+  border-radius: 8px;
+}
+
+.result-section hr {
+  @apply self-stretch
+}
+
+.action-dispatch {
+  @apply my-3 ml-3 xl:ml-8 mr-3
+}
+
+.action-dispatch .total-counter {
+  @apply font-semibold text-lg xl:text-xl 
+}
+
+.action-dispatch .real-total-sign {
+ @apply py-1 px-3 font-semibold my-2 xl:mr-12 text-sm bg-custom-black text-custom-white;
+
+ border-radius: 8px;
+}
+
+.action-dispatch .real-total-text {
+  @apply text-2xl my-2 xl:mr-8 font-bold text-custom-black;
+}
+
+.action-dispatch .dispatch-button {
+  @apply px-24 xl:px-32 py-8 bg-custom-dark text-2xl font-bold flex flex-row items-center text-custom-white select-none transition-colors cursor-pointer;
+
+  border-radius: 8px;
+}
+
+.action-dispatch .dispatch-button:hover {
+  @apply bg-custom-dark-trn-1;
+}
+
+.cart.btn-group-part > .btn.pick-all {
+  @apply text-custom-white bg-custom-dark font-bold px-5 py-1.5 select-none cursor-pointer;
+
+  border-radius: 8px;
+}
+
+.cart.btn-group-part > .btn.cancel-pick-all {
+  @apply text-custom-black bg-transparent border border-custom-black font-bold px-4 select-none cursor-pointer;
+
+  padding-top: calc( 0.375rem - 1px );
+  padding-bottom: calc( 0.375rem - 1px );
+  border-radius: 8px;
+}
+
+.cart.btn-group-part .btn.back {
+  @apply text-custom-black bg-transparent border border-custom-black font-bold ml-1 px-4 py-1.5 select-none cursor-pointer;
+
+  border-radius: 8px;
+}
+
+.cart.btn-group-part .btn.delete-picked {
+  @apply text-custom-danger bg-transparent border border-custom-danger font-bold ml-1 px-4 py-1.5 select-none cursor-pointer;
+
+  border-radius: 8px;
+}
+
+.cart.btn-group-part .btn.delete-all, .cart.btn-group-part .btn.delete-mode {
+  @apply text-custom-white bg-custom-danger font-bold ml-1 px-4 py-2 select-none cursor-pointer;
+
+  border-radius: 8px;
+}
+
+.cart.main-part > .main.head {
+  @apply hidden xl:block mb-2.5 pl-4 pr-5 py-3 bg-custom-white font-semibold;
+
+  border-radius: 8px;
+}
+
+.cart.main-part > .main-container {
+  @apply p-1.5 xl:p-3 bg-custom-white;
+
+  border-radius: 8px;
+}
+
